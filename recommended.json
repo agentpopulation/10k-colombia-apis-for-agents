@@ -1,0 +1,601 @@
+{
+  "pack": "10k-colombia-apis-for-agents",
+  "title": "Colombia API endpoints",
+  "snapshot": "2026-11-16",
+  "tested": {
+    "min": "2026-11-16",
+    "max": "2026-11-17",
+    "text": "16–17 Nov 2026"
+  },
+  "note": "On the date in last_tested (IST), one GET to the URL, sent with no key, returned HTTP 2xx and a non-empty data body. HTML pages and empty results did not pass. The format column records what came back. This is a test result for that date, not a promise that the URL answers today. Licences, terms, rate limits, accuracy and freshness were not reviewed. Endpoints are URLs, not separate APIs; many share one service.",
+  "licence": "CC BY 4.0: credit AgentPopulation and link https://agentpopulation.com",
+  "focus": "NOT title matches /(?<![a-z])(test|tests|testing|draft|drafts|copy|sample|samples|demo|untitled|scratch|temp|tmp|delete|deleteme|practice|dummy|example|training)(?![a-z])|final_final|\\d{7,}/i",
+  "buckets": [
+    {
+      "id": "agent",
+      "name": "Agent tools",
+      "title": "Keyless JSON layers and tables an agent can call (Colombia)",
+      "filter": "tags has agent-ready",
+      "endpoints": 10466,
+      "notes": [
+        "10466 of these are map-layer queries that asked for a few records (resultRecordCount); add a where clause or a geometry to ask about one place, and page through for the whole layer."
+      ],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and are tagged agent-ready (no key sent in the test call, JSON body, passed a data call). Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: url matches //query\\?/i. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Gobernación de Antioquia (ArcGIS Online)",
+          "display": "Gobernación de Antioquia (ArcGIS Online)",
+          "host": "services5.arcgis.com",
+          "endpoints_in_bucket": 600,
+          "endpoints_in_pack": 600,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services5.arcgis.com/K90UQIB09TmTjUL8/ArcGIS/rest/services/%C3%8Dndice_de_Amenaza_al_cambio_clim%C3%A1tico_2017_Antioquia/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Índice_de_Amenaza_al_cambio_climático_2017_Antioquia",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Instituto Geográfico Agustín Codazzi (ArcGIS Online)",
+          "display": "Instituto Geográfico Agustín Codazzi (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 466,
+          "endpoints_in_pack": 466,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/RVvWzU3lgJISqdke/ArcGIS/rest/services/%C3%81rea_de_estudio/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Área_de_estudio",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Alcaldía Distrital de Barranquilla (ArcGIS Online)",
+          "display": "Alcaldía Distrital de Barranquilla (ArcGIS Online)",
+          "host": "services3.arcgis.com",
+          "endpoints_in_bucket": 383,
+          "endpoints_in_pack": 383,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services3.arcgis.com/oGYAc07w6wsvgUYr/ArcGIS/rest/services/ACTIVIDAD_USOS_URBANOS___Actividades/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "ACTIVIDAD_USOS_URBANOS___Actividades",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "GeoGeeks (ArcGIS Online)",
+          "display": "GeoGeeks (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 381,
+          "endpoints_in_pack": 381,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/8DAUcrpQcpyLMznu/ArcGIS/rest/services/01zvtn/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "01zvtn",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Infraestructura de Datos Espaciales Cundinamarca IDEC (ArcGIS Online)",
+          "display": "Infraestructura de Datos Espaciales Cundinamarca IDEC (ArcGIS Online)",
+          "host": "services7.arcgis.com",
+          "endpoints_in_bucket": 346,
+          "endpoints_in_pack": 346,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services7.arcgis.com/lsxbLWF2l19Rmhqj/arcgis/rest/services/AIPE1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AIPE1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Dirección General Marítima (ArcGIS Online)",
+          "display": "Dirección General Marítima (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 196,
+          "endpoints_in_pack": 196,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/RB7c27NVd25mjSSc/ArcGIS/rest/services/2Ponderado_Evaluacion_de_proyectos_DIMAR_2023/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2Ponderado_Evaluacion_de_proyectos_DIMAR_2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Fiscalia General de la Nacion (ArcGIS Online)",
+          "display": "Fiscalia General de la Nacion (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 196,
+          "endpoints_in_pack": 196,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/lq8KepGWoqMa93pJ/ArcGIS/rest/services/1_Veredas/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "1_Veredas",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Prosperidadsocial",
+          "display": "Prosperidadsocial",
+          "host": "gis.prosperidadsocial.gov.co",
+          "endpoints_in_bucket": 191,
+          "endpoints_in_pack": 191,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://gis.prosperidadsocial.gov.co/arcgis/rest/services/Base/OFICINAS_REGIONALES/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Base/OFICINAS_REGIONALES",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "app",
+      "name": "App features",
+      "title": "Map layers to draw in an app (Colombia)",
+      "filter": "url matches //(Feature|Map)Server//i",
+      "endpoints": 10466,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Gobernación de Antioquia (ArcGIS Online)",
+          "display": "Gobernación de Antioquia (ArcGIS Online)",
+          "host": "services5.arcgis.com",
+          "endpoints_in_bucket": 600,
+          "endpoints_in_pack": 600,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services5.arcgis.com/K90UQIB09TmTjUL8/ArcGIS/rest/services/%C3%8Dndice_de_Amenaza_al_cambio_clim%C3%A1tico_2017_Antioquia/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Índice_de_Amenaza_al_cambio_climático_2017_Antioquia",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Instituto Geográfico Agustín Codazzi (ArcGIS Online)",
+          "display": "Instituto Geográfico Agustín Codazzi (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 466,
+          "endpoints_in_pack": 466,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/RVvWzU3lgJISqdke/ArcGIS/rest/services/%C3%81rea_de_estudio/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Área_de_estudio",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Alcaldía Distrital de Barranquilla (ArcGIS Online)",
+          "display": "Alcaldía Distrital de Barranquilla (ArcGIS Online)",
+          "host": "services3.arcgis.com",
+          "endpoints_in_bucket": 383,
+          "endpoints_in_pack": 383,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services3.arcgis.com/oGYAc07w6wsvgUYr/ArcGIS/rest/services/ACTIVIDAD_USOS_URBANOS___Actividades/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "ACTIVIDAD_USOS_URBANOS___Actividades",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "GeoGeeks (ArcGIS Online)",
+          "display": "GeoGeeks (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 381,
+          "endpoints_in_pack": 381,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/8DAUcrpQcpyLMznu/ArcGIS/rest/services/01zvtn/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "01zvtn",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Infraestructura de Datos Espaciales Cundinamarca IDEC (ArcGIS Online)",
+          "display": "Infraestructura de Datos Espaciales Cundinamarca IDEC (ArcGIS Online)",
+          "host": "services7.arcgis.com",
+          "endpoints_in_bucket": 346,
+          "endpoints_in_pack": 346,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services7.arcgis.com/lsxbLWF2l19Rmhqj/arcgis/rest/services/AIPE1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AIPE1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Dirección General Marítima (ArcGIS Online)",
+          "display": "Dirección General Marítima (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 196,
+          "endpoints_in_pack": 196,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/RB7c27NVd25mjSSc/ArcGIS/rest/services/2Ponderado_Evaluacion_de_proyectos_DIMAR_2023/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2Ponderado_Evaluacion_de_proyectos_DIMAR_2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Fiscalia General de la Nacion (ArcGIS Online)",
+          "display": "Fiscalia General de la Nacion (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 196,
+          "endpoints_in_pack": 196,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/lq8KepGWoqMa93pJ/ArcGIS/rest/services/1_Veredas/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "1_Veredas",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Prosperidadsocial",
+          "display": "Prosperidadsocial",
+          "host": "gis.prosperidadsocial.gov.co",
+          "endpoints_in_bucket": 191,
+          "endpoints_in_pack": 191,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://gis.prosperidadsocial.gov.co/arcgis/rest/services/Base/OFICINAS_REGIONALES/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Base/OFICINAS_REGIONALES",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding and data pipelines",
+      "title": "Statistics, boundaries, parcels and inventories for scheduled loads (Colombia)",
+      "filter": "format in (csv, xml, geojson) OR title matches /statist|census|population|boundar|parcel|zoning|district|budget|election|crash|permit|inventory|land ?use|landuse|cadast|address/i",
+      "endpoints": 22,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Area de Servicios Profesionales Esri Colombia (ArcGIS Online)",
+          "display": "Area de Servicios Profesionales Esri Colombia (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 4,
+          "endpoints_in_pack": 130,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/7S16A7PAFcmSmqJA/arcgis/rest/services/Linea_del_metro/FeatureServer/2/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Linea del metro - Construcciones selection",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Federación Nacional de Cafeteros de Colombia (ArcGIS Online)",
+          "display": "Federación Nacional de Cafeteros de Colombia (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 2,
+          "endpoints_in_pack": 44,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/azYCYQPfHWnM02Go/ArcGIS/rest/services/PARCELAS_SELECCIONADAS_TRACKS_ATRIBUTOS/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "PARCELAS_SELECCIONADAS_TRACKS_ATRIBUTOS",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "CORPORACIÓN AUTÓNOMA REGIONAL DEL CAUCA (ArcGIS Online)",
+          "display": "CORPORACIÓN AUTÓNOMA REGIONAL DEL CAUCA (ArcGIS Online)",
+          "host": "services1.arcgis.com",
+          "endpoints_in_bucket": 1,
+          "endpoints_in_pack": 43,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services1.arcgis.com/EuINl7edpiWRTtfn/arcgis/rest/services/Parcelas_de_monitoreo_manglar/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Parcelas de monitoreo manglar",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Gobernación de Antioquia (ArcGIS Online)",
+          "display": "Gobernación de Antioquia (ArcGIS Online)",
+          "host": "services5.arcgis.com",
+          "endpoints_in_bucket": 1,
+          "endpoints_in_pack": 600,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services5.arcgis.com/K90UQIB09TmTjUL8/ArcGIS/rest/services/Holandas_parcelas_WFL1/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Holandas_parcelas_WFL1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Inter American Development Bank (ArcGIS Online)",
+          "display": "Inter American Development Bank (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 1,
+          "endpoints_in_pack": 5,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/sROlVM0rATIYgC6a/arcgis/rest/services/Kontur_Population_Dataset__IDB_Countries_2026/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Kontur Population Dataset IDB Countries 2026",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Organizaciones globales y sin ánimo de lucro (ArcGIS Online)",
+          "display": "Organizaciones globales y sin ánimo de lucro (ArcGIS Online)",
+          "host": "services3.arcgis.com",
+          "endpoints_in_bucket": 1,
+          "endpoints_in_pack": 11,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services3.arcgis.com/plYw0m1VAQXL1E6U/arcgis/rest/services/Lotes_parcelas/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Lotes_parcelas",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    },
+    {
+      "id": "evals",
+      "name": "Evals and testing",
+      "title": "Varied responses to test tool calls and parsers",
+      "filter": "the whole pack",
+      "endpoints": 10466,
+      "notes": [],
+      "criteria": "Services in this pack that returned the most different formats, then the most endpoints that passed a data call, then by name: a mix of response shapes to test parsers and tool calls. Here the services returned 1 format each, so the order comes down to endpoint counts. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Gobernación de Antioquia (ArcGIS Online)",
+          "display": "Gobernación de Antioquia (ArcGIS Online)",
+          "host": "services5.arcgis.com",
+          "endpoints_in_bucket": 600,
+          "endpoints_in_pack": 600,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services5.arcgis.com/K90UQIB09TmTjUL8/ArcGIS/rest/services/%C3%8Dndice_de_Amenaza_al_cambio_clim%C3%A1tico_2017_Antioquia/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Índice_de_Amenaza_al_cambio_climático_2017_Antioquia",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Instituto Geográfico Agustín Codazzi (ArcGIS Online)",
+          "display": "Instituto Geográfico Agustín Codazzi (ArcGIS Online)",
+          "host": "services2.arcgis.com",
+          "endpoints_in_bucket": 466,
+          "endpoints_in_pack": 466,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services2.arcgis.com/RVvWzU3lgJISqdke/ArcGIS/rest/services/%C3%81rea_de_estudio/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Área_de_estudio",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Alcaldía Distrital de Barranquilla (ArcGIS Online)",
+          "display": "Alcaldía Distrital de Barranquilla (ArcGIS Online)",
+          "host": "services3.arcgis.com",
+          "endpoints_in_bucket": 383,
+          "endpoints_in_pack": 383,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services3.arcgis.com/oGYAc07w6wsvgUYr/ArcGIS/rest/services/ACTIVIDAD_USOS_URBANOS___Actividades/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "ACTIVIDAD_USOS_URBANOS___Actividades",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "GeoGeeks (ArcGIS Online)",
+          "display": "GeoGeeks (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 381,
+          "endpoints_in_pack": 381,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/8DAUcrpQcpyLMznu/ArcGIS/rest/services/01zvtn/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "01zvtn",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Infraestructura de Datos Espaciales Cundinamarca IDEC (ArcGIS Online)",
+          "display": "Infraestructura de Datos Espaciales Cundinamarca IDEC (ArcGIS Online)",
+          "host": "services7.arcgis.com",
+          "endpoints_in_bucket": 346,
+          "endpoints_in_pack": 346,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services7.arcgis.com/lsxbLWF2l19Rmhqj/arcgis/rest/services/AIPE1/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "AIPE1",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Dirección General Marítima (ArcGIS Online)",
+          "display": "Dirección General Marítima (ArcGIS Online)",
+          "host": "services6.arcgis.com",
+          "endpoints_in_bucket": 196,
+          "endpoints_in_pack": 196,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services6.arcgis.com/RB7c27NVd25mjSSc/ArcGIS/rest/services/2Ponderado_Evaluacion_de_proyectos_DIMAR_2023/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "2Ponderado_Evaluacion_de_proyectos_DIMAR_2023",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Fiscalia General de la Nacion (ArcGIS Online)",
+          "display": "Fiscalia General de la Nacion (ArcGIS Online)",
+          "host": "services.arcgis.com",
+          "endpoints_in_bucket": 196,
+          "endpoints_in_pack": 196,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://services.arcgis.com/lq8KepGWoqMa93pJ/ArcGIS/rest/services/1_Veredas/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "1_Veredas",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        },
+        {
+          "service": "Prosperidadsocial",
+          "display": "Prosperidadsocial",
+          "host": "gis.prosperidadsocial.gov.co",
+          "endpoints_in_bucket": 191,
+          "endpoints_in_pack": 191,
+          "country_codes": [
+            "CO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://gis.prosperidadsocial.gov.co/arcgis/rest/services/Base/OFICINAS_REGIONALES/FeatureServer/0/query?where=1%3D1&outFields=*&resultRecordCount=10&f=json",
+          "sample_title": "Base/OFICINAS_REGIONALES",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-16"
+        }
+      ]
+    }
+  ]
+}
